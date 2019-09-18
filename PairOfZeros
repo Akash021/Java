@@ -1,0 +1,23 @@
+package testpackage;
+
+public class PairsOfZero {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "1000001101000100110";
+		int strLength = str.length();
+		int n=0;
+		int count = 0;
+		while(n<strLength-1) {
+			if(str.charAt(n)=='0' && str.charAt(n+1)=='0') {
+				count = count+1;
+				n = n+2;
+			}else {
+				n = n+1;
+			}
+		}
+		System.out.println("Pairs of Zero ::"+count);
+
+	}
+
+}
